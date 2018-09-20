@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">🡐</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About Us</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-center w3-padding-16">My Food</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <a href="../Group_01/Galbi.html"><img src="GalBi.jpeg" id="galbi" alt="Galbi" style="width:100%"></a>
+      <h3><a href="../Group_01/Galbi.html">Korean Barbequed Beef Short Ribs</a></h3>
+    </div>
+    
+    <div class="w3-quarter">
+      <a href="../Group_01/Spagetti.html"><img src="spagetti.jpg" id="spaghetti" alt="Spaghetti" style="width:100%"></a>
+      <h3><a href="../Group_01/Spagetti.html">Spaghetti and Meatballs</a></h3>
+    </div>
+    
+    <div class="w3-quarter">
+      <a href="../Group_01/lasagna.html"><img src="Lasagna.jpg" id="lasagna" alt="Lasagna" style="width:100%"></a>
+      <h3><a href="../Group_01/lasagna.html">World's Best Lasagna</a></h3>
+    </div>
+          
+    <div class="w3-quarter">
+       <a href="../Group_01/Rolls.html"><img src="rolls.jpg" id="rolls" alt="Fresh spring Roll" style="width:100%"></a>
+       <h3><a href="../Group_01/Rolls.html">Vietnamese Fresh Spring Rolls</a></h3>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <a href="../Group_01/popsicle.html"><img src="popsicles.jpg" id="popsicles" alt="Popsicle" style="width:100%"></a>
+      <h3><a href="../Group_01/popsicle.html">Coconut Pineapple Paletas</a></h3>
+    </div>
+    
+    <div class="w3-quarter">
+      <a href="../Group_01/Salmon.html"><img src="salmon1.jpg" id="salmon" alt="Salmon" style="width:100%"></a>
+       <h3><a href="../Group_01/Salmon.html">Honey Garlic Glazed Salmon</a></h3>
+    </div>
+    
+    <div class="w3-quarter">
+      <a href="../Group_o1/grilledCheese.html"><img src="grilledCheese.jpg" id="grilledCheese" alt="Sandwich" style="width:100%"></a>
+      <h3><a href="../Group_o1/grilledCheese.html">Hawaiian Grilled Cheese</a></h3>
+    </div>
+    
+    <div class="w3-quarter">
+      <a href="../Group_o1/Cookies.html"><img src="cookies.jpg" id="cookies" alt="Cookies" style="width:100%"></a>
+      <h3><a href="../Group_o1/Cookies.html">Ultimate Chocolate Chip Cookies</a></h3>
+    </div>
+  </div>
+
+  
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>About Us</h3><br>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <div class="person" onclick="sayHello(this)">
+              <img src="kevin.jpeg" alt="Kevin" class="w3-image" style="display:block;margin:auto" width="400px">
+              <h4>Gyuhwi(kevin) lee</h4>
+            </div>
+          </td>
+          <td>
+            <div class="person" onclick="sayHello(this)">
+              <img src="sarah.jpg" alt="Sarah" class="w3-image" style="display:block;margin:auto" width="300px">
+              <h4>Sarah Kunzler</h4>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Thanks for reading!</h3>
+      <p>Made for CS260 Creative Project #1</p>
+      
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+  // Script to open and close sidebar
+  function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+  }
+   
+  function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+  }
+  
+  function sayHello(obj){
+    alert("Hello!!")
+  }
+  
+</script>
+
+</body>
+</html>
