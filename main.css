@@ -21,13 +21,9 @@ h3 a:hover{
     opacity:0.5;
 }
 
-.food a{
-    text-decoration:none;
-}
-.food:hover{
-    opacity:0.5;
+.person:hover{
+    cursor: pointer;
     text-decoration:underline;
-
 }
 
 h1{
